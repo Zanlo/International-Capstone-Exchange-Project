@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+ Copyright 2018 North Dakota State University
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+	xmlns:p="tapestry:parameter" t:type="layout" title="Proposal Submission">
+
+	<p>
+		<h1>
+			<b>Add Proposal for Project</b>
+		</h1>
+	</p>
+	<h3>
+		<b>Enter Proposal Details</b>
+	</h3>
+
+
+		<t:beaneditform t:id="form" object="proposal" add="subjects,propTypes" submitLabel="Save" exclude="created,proposalStatus,user,pairing,lastModified,institution,company" reorder="name,cost,potentialStart,teamSize,perStudentWeekly,durationInWeeks,subjects,propTypes,description">
+			<p:description>
+				<t:label for="description">Description - Subject area (e.g. CS/ME/etc.) and any notes (e.g. prefer web design/power systems/etc.).</t:label>
+				<t:textarea t:id="description" t:mixins="summernote" value="proposal.description" t:validate="required"></t:textarea>
+			</p:description>
+			<p:subjects>
+				<t:label for="selectedSubjects">Subjects</t:label>
+				<t:checklist t:id="selectedSubjects" encoder="encoder" model="subjectsModel" t:validate="required"/>
+			</p:subjects>
+      <p:propTypes>
+        <t:label for="selectedPropTypes">Proposal Types</t:label>
+        <t:checklist t:id="selectedPropTypes" encoder="encoder" model="propTypesModel" t:validate="required"/>
+      </p:propTypes>
+		</t:beaneditform>
+
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+ Copyright 2018 North Dakota State University
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<html
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+    xmlns:p="tapestry:parameter" t:type="adminlayout" title="Subjects">
+    
+    <t:beaneditform t:id="form" object="subject" exclude="created" reorder="name,status">
+    	<p:description>
+    		<t:textarea t:mixins="summernote" value="subject.description"></t:textarea>
+    	</p:description>
+    </t:beaneditform>
+    
+    <t:grid source="subjects" row="row" reorder="name,description">
+    	<p:nameCell><t:pagelink page="admin/subjects" context="row">${row.name}</t:pagelink></p:nameCell>
+    	<p:descriptionCell><t:outputraw value="row.description"></t:outputraw></p:descriptionCell>
+    </t:grid>
+    
+</html>

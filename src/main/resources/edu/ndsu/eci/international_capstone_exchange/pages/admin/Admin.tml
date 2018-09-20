@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+ Copyright 2018 North Dakota State University
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<html
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+    xmlns:p="tapestry:parameter" t:type="adminlayout" title="Admin Page">
+    
+ <body>
+ <!--
+ <div class="text-success text-center">
+     Use tabs to select areas to modify.
+ </div>
+ <div class = "list-group">
+     <a href="/international-capstone-exchange/admin/countries"
+        class="list-group-item list-group-item-success">
+         <div>
+             Countries: Select countries to add to the International Capstone Exchange Project.
+         </div>
+     </a>
+     <a href="/international-capstone-exchange/admin/institutions"
+        class="list-group-item list-group-item-success">
+         <div>
+             Instituions: Select institutions to add to the International Capstone Exchange Project.
+         </div>
+     </a>
+     <a href="/international-capstone-exchange/admin/pairings"
+        class="list-group-item list-group-item-success">
+         <div>
+             Pairings: See current pairings of institutions.
+         </div>
+     </a>
+     <a href="/international-capstone-exchange/admin/proposals"
+        class="list-group-item list-group-item-success">
+         <div>
+             Proposals: See all current proposals from institutions.
+         </div>
+     </a>
+     <a href="/international-capstone-exchange/admin/proposaltypes"
+        class="list-group-item list-group-item-success">
+         <div>
+             Proposal Types: View current proposals types and add more.
+         </div>
+     </a>
+     <a href="/international-capstone-exchange/admin/subjects"
+        class="list-group-item list-group-item-success">
+         <div>
+             Subjects: View current subjects and add more.
+         </div>
+     </a>
+     <a href="/international-capstone-exchange/admin/users"
+        class="list-group-item list-group-item-success">
+         <div>
+             List of all users and admin users.
+         </div>
+     </a>
+ </div>
+ -->
+ 
+<!--<div>
+	TODO put status information in here like things that need to be acted upon.
+</div>
+-->
+   
+</body>  
+</html>

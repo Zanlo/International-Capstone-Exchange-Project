@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+ Copyright 2018 North Dakota State University
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<html
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+    xmlns:p="tapestry:parameter" t:type="layout" title="User Details Page">
+ 
+ <body>   
+<div>
+
+  <h1>Logged User: ${user.ssoemail}</h1>
+    <ul t:id="tabs" t:type="any" class="nav nav-tabs">
+        <li class="active">
+            <a href="#tab1" data-toggle="tab">Account Info</a>
+        </li>
+        <li>
+            <a href="#tab2" data-toggle="tab">Pairings</a>
+        </li>
+        <li>
+            <a href="#tab3" data-toggle="tab">Proposals</a>
+        </li>
+        <li>
+            <a href="#tab4" data-toggle="tab">Proposal Types</a>
+        </li>
+        <li>
+            <a href="#tab5" data-toggle="tab">Subjects</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab-pane active">
+            <h2>Account Info</h2>
+            <t:Beandisplay object="user" exclude="proposals,roles,credentialsExpired,accountLocked,id,status,pairingNotes,federatedId,pairsMade"></t:Beandisplay>
+            <div><t:pagelink page="account/updateaccount">Update Account</t:pagelink></div>
+        </div>
+        <div id="tab2" class="tab-pane">
+            <h2>Pairings</h2>
+            <p>Follow link for more details.</p>
+            <t:grid source="pairings" exclude="notes,proposals,admin" row="pairRow" add="A,B" reorder="name,a,b">
+                <p:aCell>${pairRow.proposals.get(0).name}</p:aCell>
+                <p:bCell>${pairRow.proposals.get(1).name}</p:bCell>
+                <p:nameCell><t:pagelink page="account/pairview" context="pairRow">${pairRow.name}</t:pagelink></p:nameCell>
+            </t:grid>
+        </div>
+        <div id="tab3" class="tab-pane">
+            <h2>Proposals</h2>
+            <t:grid source="proposals" include="created,name,potentialStart,subjects,types,description" row="proposalRow" add="edit,delete">
+                <p:descriptionCell><t:outputraw value="proposalRow.description"></t:outputraw></p:descriptionCell>
+
+                <p:editCell>
+                    <t:if test="proposalRow.editable">
+                        <t:pagelink page="account/proposalsubmission" context="proposalRow">Edit ${proposalRow.name}</t:pagelink>
+                    </t:if>
+                </p:editCell>
+                <p:deleteCell>
+                    <t:if test="proposalRow.deletable">
+                        <t:eventlink event="delete" context="proposalRow">Delete ${proposalRow.name}</t:eventlink>
+                    </t:if>
+                </p:deleteCell>
+            </t:grid>
+            <div><t:pagelink page="account/proposalsubmission">Create Proposal</t:pagelink></div>
+        </div>
+        <div id="tab4" class="tab-pane">
+            <h2>Proposal Types</h2>
+            <div>Description of the types of proposals in the system..</div>
+            <t:grid source="proposalTypes" row="propTypeRow" include="name,description">
+                <p:descriptionCell><t:outputraw value="propTypeRow.description"></t:outputraw></p:descriptionCell>
+            </t:grid>
+        </div>
+        <div id="tab5" class="tab-pane">
+            <h2>Subjects</h2>
+            <div>Currently available subjects in the system. Have a good idea for a new subject? Reach out to us on the <t:pagelink page="contact">contact page</t:pagelink>.</div>
+            <t:grid source="subjects" row="subjectRow" include="name,description">
+                <p:descriptionCell><t:outputraw value="subjectRow.description"></t:outputraw></p:descriptionCell>
+            </t:grid>
+        </div>
+    </div>
+  <!--
+     <h2>Account Info</h2>
+      <t:Beandisplay object="user" exclude="proposals,roles,credentialsExpired,accountLocked,id,status,pairingNotes,federatedId,pairsMade"></t:Beandisplay>
+      <div><t:pagelink page="account/updateaccount">Update Account</t:pagelink></div>
+
+ <h2>Pairings</h2>
+ <p>Follow link for more details.</p>
+ <t:grid source="pairings" exclude="notes,proposals,admin" row="pairRow" add="A,B" reorder="name,a,b"> 
+   <p:aCell>${pairRow.proposals.get(0).name}</p:aCell>
+   <p:bCell>${pairRow.proposals.get(1).name}</p:bCell>
+   <p:nameCell><t:pagelink page="account/pairview" context="pairRow">${pairRow.name}</t:pagelink></p:nameCell>
+ </t:grid>
+ 
+ <h2>Proposals</h2>
+  <t:grid source="proposals" include="created,name,potentialStart,subjects,types,description" row="proposalRow" add="edit,delete">
+  	<p:descriptionCell><t:outputraw value="proposalRow.description"></t:outputraw></p:descriptionCell>
+  	
+    <p:editCell>
+    	<t:if test="proposalRow.editable">
+    		<t:pagelink page="account/proposalsubmission" context="proposalRow">Edit ${proposalRow.name}</t:pagelink>
+    	</t:if>
+    </p:editCell>
+    <p:deleteCell>
+      <t:if test="proposalRow.deletable">
+        <t:eventlink event="delete" context="proposalRow">Delete ${proposalRow.name}</t:eventlink>
+      </t:if>
+    </p:deleteCell>
+  </t:grid>
+  <div><t:pagelink page="account/proposalsubmission">Create Proposal</t:pagelink></div>
+
+ 
+  <h2>Proposal Types</h2>
+  <div>Description of the types of proposals in the system..</div>
+  <t:grid source="proposalTypes" row="propTypeRow" include="name,description">
+    <p:descriptionCell><t:outputraw value="propTypeRow.description"></t:outputraw></p:descriptionCell>
+  </t:grid>
+
+ 
+  <h2>Subjects</h2>
+  <div>Currently available subjects in the system. Have a good idea for a new subject? Reach out to us on the <t:pagelink page="contact">contact page</t:pagelink>.</div>
+  <t:grid source="subjects" row="subjectRow" include="name,description">
+  	<p:descriptionCell><t:outputraw value="subjectRow.description"></t:outputraw></p:descriptionCell>
+  </t:grid>
+  -->
+</div>
+
+</body>
+</html>

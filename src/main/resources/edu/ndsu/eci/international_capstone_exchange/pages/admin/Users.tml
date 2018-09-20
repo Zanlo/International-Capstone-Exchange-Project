@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+ Copyright 2018 North Dakota State University
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<html
+        xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+        xmlns:p="tapestry:parameter" t:type="adminlayout" title="Users">
+        <!--<div>A lot of functionality remains here, plus the layout is broken</div>-->
+        <ul t:id="tabs" t:type="any" class="nav nav-tabs">
+            <li class="active">
+                <a href="#tab1" data-toggle="tab">Pending Users</a>
+            </li>
+            <li>
+                <a href="#tab2" data-toggle="tab">Active Users</a>
+            </li>
+            <li>
+                <a href="#tab3" data-toggle="tab">Admin Users</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane active">
+                <h2>Pending Users</h2>
+                <t:grid source="pending" add="approve,deny" row="row" reorder="approve,deny,created,institution,departmentName,name,email">
+                    <p:approveCell><t:eventlink event="approve" context="row">Approve ${row.ssoemail}</t:eventlink></p:approveCell>
+                    <p:denyCell><t:eventlink event="deny" context="row">Deny ${row.ssoemail}</t:eventlink></p:denyCell>
+                </t:grid>
+            </div>
+            <div id="tab2" class="tab-pane">
+                <h2>Active Users</h2>
+                <t:grid source="active" add="makeAdmin" row="row" exclude="created, Source, id, ssoEmail, ssoName, workPhone, url, roles, CredentialsExpired, federatedId" reorder="institution,departmentName,name,email">
+                    <p:makeAdminCell><t:eventlink event="makeAdmin" context="row">Make <!--${row.ssoemail}--> admin</t:eventlink></p:makeAdminCell>
+                </t:grid>
+            </div>
+            <div id="tab3" class="tab-pane">
+                <h2>Admin Users</h2>
+                <t:grid source="admins" add="removeAdmin" row="row" exclude="created, Source, id, ssoEmail, ssoName, workPhone, url, roles, CredentialsExpired, federatedId" reorder="institution,departmentName,name,email">
+                    <p:removeAdminCell><t:eventlink event="removeAdmin" context="row">Remove <!--${row.ssoemail}--> admin</t:eventlink></p:removeAdminCell>
+                </t:grid>
+            </div>
+        </div>
+</html>

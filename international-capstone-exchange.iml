@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="tapestry" name="Tapestry">
+      <configuration>
+        <setting name="filterName" value="international-capstone-exchange" />
+        <setting name="applicationPackage" value="edu.ndsu.eci.international_capstone_exchange" />
+        <setting name="version" value="5.3.6" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="Loomy">
+    <option name="newPagesClassesSourceDirectory" value="$MODULE_DIR$/src/main/java" />
+    <option name="newPagesTemplatesSourceDirectory" value="$MODULE_DIR$/src/main/resources" />
+  </component>
+</module>

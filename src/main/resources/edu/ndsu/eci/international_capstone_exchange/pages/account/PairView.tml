@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+ Copyright 2018 North Dakota State University
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<html
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+    xmlns:p="tapestry:parameter" t:type="layout" title="Pairing Details">
+    
+    <h2>${pairing.name}</h2>
+    <p>Created: ${pairing.tmstamp} by ${pairing.admin.name}</p>
+    <p><t:pagelink page="account/setcompany" context="proposal">Set Company Information</t:pagelink></p>
+    
+    <t:Loop source="pairing.proposals" value="row">
+      <t:BeanDisplay object="row" add="email,phone,proposalName,country,department" include="cost,created,description,durationInWeeks,lastModified,perStudentWeekly,potentialStart,teamSize,company,institution,subjects,types,name" reorder="name,email,phone,department,institution,country,subjects,types,company,proposalName,description,potentialStart,teamSize,cost,created,durationInWeeks,perStudentWeekly,lastModified">
+        <p:email>${row.user.email}</p:email>
+        <p:phone>${row.user.workphone}</p:phone>
+        <p:proposalName>${row.name}</p:proposalName>
+        <p:name>${row.user.name}</p:name>
+        <p:country>${row.institution.country}</p:country>
+        <p:description><t:outputraw value="row.description"></t:outputraw></p:description>
+        <p:department>${row.user.departmentName}</p:department>
+        <p:company>${row.company?.companyName} - ${row.company?.companyAddress}. ${row.company?.companyUrl}</p:company>
+      </t:BeanDisplay>
+    </t:Loop>
+    
+</html>

@@ -1,0 +1,20 @@
+cat univ_list-pipe.csv |awk -F\| '{print $2}'|sort|uniq|awk '{print NR"|"$0}' > countries-with-pk
+
+cat countries-with-pk |sed "s/'/\\\'/"|awk -F\| '{print "insert into countries(name,pk,status,created) values (\47"$2"\47,\47"$1"\47,\47APPROVED\47,now());"}' > countries.sql
+
+# ideally the file would be the right way to begin with or in preprocessing, but this swaps things around as sort and join don't always cooperate when not using the first column.
+
+cat univ_list-pipe.csv |awk -F\| '{print $2"|"$1}'|sort > reversed-list.csv
+cat countries-with-pk |awk -F\| '{print $2"|"$1}' > fixed-country-pks.csv
+
+# And that failed to sort Congo in, so I did it by hand as they only have one
+join -t \| fixed-country-pks.csv reversed-list.csv.sort  > out
+
+# there's some sort of odd hyphen in the data that mysql  isn't happy about, so swap that out too, hoping vim with UTF-8 keeps it
+cat out |sort|uniq|sed "s/'/\\\'/"|awk -F\| '{print "insert into institutions(countryPk,created,currencyPk,name,pk,status) values ("$2",now(),200,\47"$3"\47,"NR",\47APPROVED\47);"}' > institutions.sql
+
+cat out |sort|uniq|sed "s/-​/-/"|sed "s/'/\\\'/"|awk -F\| '{print "insert into institutions(countryPk,created,currencyPk,name,pk,status) values ("$2",now(),200,\47"$3"\47,"NR",\47APPROVED\47);"}' > institutions.sql
+
+# Push the pks beyond anything we might do by hand
+ update AUTO_PK_SUPPORT set next_id=5000;
+

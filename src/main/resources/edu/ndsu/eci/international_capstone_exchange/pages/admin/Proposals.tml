@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+ Copyright 2018 North Dakota State University
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<html
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+    xmlns:p="tapestry:parameter" t:type="adminlayout" title="Proposals">
+    
+ <body>
+ <ul t:id="tabs" t:type="any" class="nav nav-tabs">
+  <li class="active">
+   <a href="#tab1" data-toggle="tab">Pending / Pairable Proposals</a>
+  </li>
+  <li>
+   <a href="#tab2" data-toggle="tab">Paired Proposals</a>
+  </li>
+  <li>
+   <a href="#tab3" data-toggle="tab">All Proposals</a>
+  </li>
+ </ul>
+ <div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+   <h3>Pending / Pairable Proposals</h3>
+
+   <t:grid source="pendingProposals" row="row" exclude="company,pairing,editable,proposalsStatus,name,description,potentialStart,teamSize,cost,created,durationInWeeks,perStudentWeekly,lastModified" add="pair,country" reorder="pair,institution,country,subjects,types,user">
+    <p:descriptionCell><t:outputraw value="row.description"></t:outputraw></p:descriptionCell>
+    <p:pairCell>Pair <t:pagelink page="admin/setpairing" context="row">${row.name} <span class="sr-only">${row.institution}</span></t:pagelink></p:pairCell>
+    <p:countryCell>${row.institution.country}</p:countryCell>
+   </t:grid>
+  </div>
+
+  <div id="tab2" class="tab-pane">
+   <h3>Paired Proposals</h3>
+
+   <t:grid source="pairedProposals" row="row" add="country" exclude="potentialStart,teamSize,cost,created,durationInWeeks,perStudentWeekly,lastModified,description,company" reorder="institution,country,subjects,types,user">
+    <!--<p:descriptionCell><t:outputraw value="row.description"></t:outputraw></p:descriptionCell>-->
+    <p:countryCell>${row.institution.country}</p:countryCell>
+    <p:pairingCell>
+     <t:if test="row.pairing">
+      ${row.paired.institution} - ${row.paired.name}
+     </t:if>
+    </p:pairingCell>
+   </t:grid>
+  </div>
+
+  <div id="tab3" class="tab-pane">
+   <h3>All Proposals</h3>
+
+   <!--<t:grid source="allProposals" row="row" add="country" reorder="institution,country,subjects,types,user,description,potentialStart,teamSize,cost,created,durationInWeeks,perStudentWeekly,lastModified">-->
+   <t:grid source="allProposals" row="row" add="country" exclude="potentialStart,teamSize,cost,created,durationInWeeks,perStudentWeekly,lastModified,description,company" reorder="institution,country,subjects,types,user">
+    <!--<p:descriptionCell><t:outputraw value="row.description"></t:outputraw></p:descriptionCell>-->
+    <p:countryCell>${row.institution.country}</p:countryCell>
+    <p:subjectsCell><span t:type="loop" t:source="row.subjects" t:value="subject">${subject.name}</span></p:subjectsCell>
+    <p:pairingCell>
+     <t:if test="row.pairing">
+      ${row.paired.institution} - ${row.paired.name}
+     </t:if>
+    </p:pairingCell>
+   </t:grid>
+  </div>
+ </div>
+ 
+</body>  
+</html>

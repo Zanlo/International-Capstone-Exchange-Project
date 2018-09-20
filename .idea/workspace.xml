@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e984253e-d42f-4455-b615-d11d3ca7a3f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/international-capstone-exchange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/international-capstone-exchange.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/auth/LocalDevRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/auth/LocalDevRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/components/AdminLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/components/AdminLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/account/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/account/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/Proposals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/Proposals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/services/AppModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/services/AppModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/components/AdminLayout.tml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/components/AdminLayout.tml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/components/Layout.tml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/components/Layout.tml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Contact.tml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Contact.tml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Index.tml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Index.tml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Login.tml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Login.tml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Privacy.tml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Privacy.tml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/account/Dashboard.tml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/account/Dashboard.tml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Admin.tml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Admin.tml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Proposals.tml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Proposals.tml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Users.tml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Users.tml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/mybootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mybootstrap/css/bootstrap.css" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="capstone_exchange@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="capstone_exchange@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="capstone_exchange@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="capstone_exchange: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="capstone_exchange@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="capstone_exchange: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="proposals: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="capstone_exchange@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="capstone_exchange: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="proposalSubjects: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="capstone_exchange@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="capstone_exchange: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="proposalTypes: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="capstone_exchange@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="capstone_exchange: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="subjects: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="capstone_exchange@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="capstone_exchange: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="types: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-346926730">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="14" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.opened" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="DATABASE/c1534ee3-dc63-4cdd-9465-e0eed8705d05" value="1" />
+          <entry key="SCHEMA:capstone_exchange" value="1" />
+          <entry key="apt" value="1" />
+          <entry key="countries" value="1" />
+          <entry key="css" value="13" />
+          <entry key="gitignore" value="1" />
+          <entry key="ico" value="1" />
+          <entry key="institutions" value="1" />
+          <entry key="java" value="195" />
+          <entry key="js" value="10" />
+          <entry key="md" value="1" />
+          <entry key="pairingcompany" value="1" />
+          <entry key="pairingnotes" value="1" />
+          <entry key="pairings" value="1" />
+          <entry key="properties" value="11" />
+          <entry key="proposals" value="2" />
+          <entry key="proposalsubjects" value="2" />
+          <entry key="proposaltypes" value="3" />
+          <entry key="roles" value="12" />
+          <entry key="sql" value="2" />
+          <entry key="subjects" value="2" />
+          <entry key="tml" value="106" />
+          <entry key="types" value="2" />
+          <entry key="users" value="18" />
+          <entry key="vm" value="7" />
+          <entry key="xml" value="56" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="13" />
+          <entry key="Database Element" value="45" />
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="195" />
+          <entry key="JavaScript" value="10" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="11" />
+          <entry key="SQL" value="1" />
+          <entry key="Scratch" value="1" />
+          <entry key="TML" value="106" />
+          <entry key="UML" value="3" />
+          <entry key="VTL" value="7" />
+          <entry key="XML" value="56" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="158" />
+          <entry key="java" value="592" />
+          <entry key="properties" value="54" />
+          <entry key="tml" value="2958" />
+          <entry key="txt" value="2" />
+          <entry key="xml" value="150" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="158" />
+          <entry key="JAVA" value="592" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="54" />
+          <entry key="TML" value="2958" />
+          <entry key="XML" value="150" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/account/Dashboard.tml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-317">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="56" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/Proposals.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1642#1643#0" expanded="true" />
+                <element signature="e#1694#1695#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Proposals.tml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="64" column="121" selection-start-line="64" selection-start-column="121" selection-end-line="64" selection-end-column="121" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/persist/Subject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/persist/auto/_Subject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+              <folding>
+                <element signature="e#1905#1935#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/ProposalTypes.tml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://c1534ee3-dc63-4cdd-9465-e0eed8705d05/schema/capstone_exchange/table/proposals">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://c1534ee3-dc63-4cdd-9465-e0eed8705d05/schema/capstone_exchange/table/proposalsubjects">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tapestry Page Class" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cayenne-mav</find>
+      <find>commons-pool</find>
+      <find>localre</find>
+      <find>col-sm-3</find>
+      <find>navbar inv</find>
+      <find>navbar-in</find>
+      <find>navbar</find>
+      <find>sidebar</find>
+      <find>init-su</find>
+      <find>mcust</find>
+      <find>document</find>
+      <find>footer</find>
+      <find>update</find>
+      <find>pairedProposals</find>
+      <find>t-cay</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/persist</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/CapstoneDomainNode.driver.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/single/Single.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/Dashboardtemp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Dashboardtemp.tml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/pairingstemp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/usertemp.tml" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/pairingstemp.tml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/usertemp.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jetty-env.xml" />
+        <option value="$PROJECT_DIR$/src/main/international-capstone-exchange.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/auth/LocalDevRealm.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/services/AppModule.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/hello.tml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/components/Layout.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/components/Layout.tml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/mybootstrap/css/sidebar.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/mybootstrap/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/mybootstrap/css/adminLayout.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/assets/toggleSidebar.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/assets/css/adminLayout.css" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/account/Dashboard.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/account/Dashboard.tml" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Admin.tml" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Contact.tml" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Login.tml" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Index.tml" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Privacy.tml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/components/AdminLayout.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/components/AdminLayout.tml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/Users.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Users.tml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/Proposals.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Proposals.tml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="International Capstone Exchange" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="120" />
+    <option name="width" value="1440" />
+    <option name="height" value="805" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="TapestryProjectView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="international-capstone-exchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="international-capstone-exchange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="international-capstone-exchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="international-capstone-exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="international-capstone-exchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="international-capstone-exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="international-capstone-exchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="international-capstone-exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="international-capstone-exchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="international-capstone-exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="international_capstone_exchange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="international-capstone-exchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="international-capstone-exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="international_capstone_exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="persist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="international-capstone-exchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="international-capstone-exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="international_capstone_exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="persist" type="462c0819:PsiDirectoryNode" />
+              <item name="auto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="international-capstone-exchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="international-capstone-exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="international-capstone-exchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="international-capstone-exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="international_capstone_exchange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="international-capstone-exchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="international-capstone-exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="international_capstone_exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="international-capstone-exchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="international-capstone-exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="international-capstone-exchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="international-capstone-exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537416942460" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Project" type="JettyRunner-By-GuiKeller" factoryName="Jetty Runner" editBeforeRun="true">
+      <option name="JettyRunnerV112-WebAppPath" value="/international-capstone-exchange" />
+      <option name="JettyRunnerV112-WebAppFolder" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="JettyRunnerV112-ClassesDirectory" value="$PROJECT_DIR$/target/classes" />
+      <option name="JettyRunnerV112-RunOnPort" value="8080" />
+      <option name="JettyRunnerV112-JettyXML" value="" />
+      <option name="JettyRunnerV112-VmArgs" value="-Dtapestry.compress-whitespace=false-Drun.mode=prototype" />
+      <option name="JettyRunnerV112-PassParentEnvVars" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JettyRunner-By-GuiKeller" factoryName="Jetty Runner">
+      <option name="JettyRunnerV112-WebAppPath" value="/international-capstone-exchange" />
+      <option name="JettyRunnerV112-WebAppFolder" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="JettyRunnerV112-ClassesDirectory" value="" />
+      <option name="JettyRunnerV112-RunOnPort" value="8080" />
+      <option name="JettyRunnerV112-JettyXML" value="" />
+      <option name="JettyRunnerV112-VmArgs" value="-Dtapestry.compress-whitespace=false-Drun.mode=prototype" />
+      <option name="JettyRunnerV112-PassParentEnvVars" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e984253e-d42f-4455-b615-d11d3ca7a3f3" name="Default Changelist" comment="" />
+      <created>1535512997685</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535512997685</updated>
+      <workItem from="1535512998972" duration="8150000" />
+      <workItem from="1535533105465" duration="22498000" />
+      <workItem from="1535667921208" duration="8055000" />
+      <workItem from="1535942749679" duration="2523000" />
+      <workItem from="1536023442376" duration="8713000" />
+      <workItem from="1536105587645" duration="1938000" />
+      <workItem from="1536127398920" duration="720000" />
+      <workItem from="1536200294567" duration="1374000" />
+      <workItem from="1536203121401" duration="1896000" />
+      <workItem from="1536300971909" duration="31995000" />
+      <workItem from="1536552441710" duration="8190000" />
+      <workItem from="1537327848729" duration="1028000" />
+      <workItem from="1537328896785" duration="38000" />
+      <workItem from="1537329284978" duration="11911000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="109029000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="120" width="1440" height="805" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22460657" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959327" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18793829" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994374" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32911393" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32911393" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32678822" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32867134" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Tapestry" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.3297568" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.23175965" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="das://c1534ee3-dc63-4cdd-9465-e0eed8705d05/schema/capstone_exchange/table/institutions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c1534ee3-dc63-4cdd-9465-e0eed8705d05/schema/capstone_exchange/table/pairingcompany">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/SetPairing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-681">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/Institutions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/hello.tml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/init/Route.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Countries.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/auth/BaseILACRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3229">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/auth/FederatedAccountsRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-348">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/auth/ILACRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-453">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/Autocomp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/mybootstrap/css/sidebar.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Autocomp.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/mybootstrap/css/adminLayout.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/mybootstrap/js/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/mixins/Summernote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/assets/toggleSidebar.js" />
+    <entry file="das://c1534ee3-dc63-4cdd-9465-e0eed8705d05/schema/capstone_exchange/table/subjects">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/mybootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="5807" column="13" selection-start-line="5807" selection-start-column="7" selection-end-line="5807" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c1534ee3-dc63-4cdd-9465-e0eed8705d05/schema/capstone_exchange/table/roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/account/UpdateAccount.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/account/UpdateAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/assets/init-summernote.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/components/Layout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/components/Layout.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Contact.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="65" column="6" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Index.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-325">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Login.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Privacy.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Admin.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c1534ee3-dc63-4cdd-9465-e0eed8705d05/schema/capstone_exchange/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/Logout.tml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/components/AdminLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/components/AdminLayout.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="71" column="46" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/account/Dashboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="94" column="3" lean-forward="true" selection-start-line="92" selection-start-column="2" selection-end-line="94" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/account/Dashboard.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="56" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Users.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="19" column="54" lean-forward="true" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/ProposalTypes.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c1534ee3-dc63-4cdd-9465-e0eed8705d05/schema/capstone_exchange/table/types">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c1534ee3-dc63-4cdd-9465-e0eed8705d05/schema/capstone_exchange/table/proposaltypes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c1534ee3-dc63-4cdd-9465-e0eed8705d05/schema/capstone_exchange/table/proposalsubjects">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c1534ee3-dc63-4cdd-9465-e0eed8705d05/schema/capstone_exchange/table/proposals">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/persist/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/persist/auto/_Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding>
+            <element signature="e#1905#1935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ndsu/eci/international_capstone_exchange/pages/admin/Proposals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/edu/ndsu/eci/international_capstone_exchange/pages/admin/Proposals.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="64" column="121" selection-start-line="64" selection-start-column="121" selection-end-line="64" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/assets/css/adminLayout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="184" column="1" selection-start-line="184" selection-start-column="1" selection-end-line="184" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

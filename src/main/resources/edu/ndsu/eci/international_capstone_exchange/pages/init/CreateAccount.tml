@@ -1,0 +1,69 @@
+<!--
+ Copyright 2018 North Dakota State University
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<html t:type="layout" title="Create Account"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+      
+      
+ <body>
+ <!-- Page Content -->
+ <div class="w3-container w3-teal">
+  <h1>First Time Users: Create Account</h1>
+
+</div>
+<br/>
+
+ <t:form t:type="form" t:id="form">
+<t:errors/>
+
+<label t:type="label" for="country"/><span style="color:red;">*</span>
+<select t:type="select" t:id="country" value="country"  model="countries" blankOption="ALWAYS" blankLabel="Choose" zone="institutionZone" validate="required"/>
+<br/>
+
+
+<t:zone t:id="institutionZone"> 
+	<label t:type="label" for="institution"/><span style="color:red;">*</span>
+	<t:select t:id="institution" model="institutions" blankLabel="Choose" validate="required" value="institution"/>
+</t:zone>
+
+<label t:type="label" for="name"/>
+<input t:type="textfield" t:id="name" t:placeholder="Name" value="name" t:validate="required"/>
+
+<label t:type="label" for="email"/>
+<input t:type="textfield" t:id="email" t:placeholder="Email" value="email" t:validate="required"/>
+
+<label t:type="label" for="phone"/>
+<input t:type="textfield" t:id="phone" value="phone" t:validate="required"/>
+
+<label t:type="label" for="url">Personal Website URL (optional)</label>
+<input t:type="textfield" t:id="url" value="url"/>
+
+<label t:type="label" for="departmentName">Department Name</label>
+<input t:type="textfield" t:id="departmentName" t:placeholder="Enter the name of your department" value="departmentName" t:validate="required" />
+
+<label t:type="label" for="agree">I agree to the <t:pagelink page="privacy" target="_blank">privacy policy.</t:pagelink></label>
+<t:Checkbox value="agree" t:id="agree" required="required"/>
+<div>
+<input type="submit" value="Create"/>
+</div>
+
+</t:form>
+</body>     
+
+		
+	
+
+</html>

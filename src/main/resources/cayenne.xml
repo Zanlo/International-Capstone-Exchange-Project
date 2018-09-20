@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<domains project-version="3.0.0.1">
+<domain name="CapstoneDomain">
+	<map name="CapstoneDomainMap" location="CapstoneDomainMap.map.xml"/>
+
+	<node name="CapstoneDomainNode"
+		 datasource="jdbc/capstone"
+		 factory="org.apache.cayenne.conf.JNDIDataSourceFactory">
+			<map-ref name="CapstoneDomainMap"/>
+	 </node>
+</domain>
+</domains>

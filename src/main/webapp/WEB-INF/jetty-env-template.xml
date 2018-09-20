@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!--
+ Copyright 2018 North Dakota State University
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+	<!-- MySQL JNDI Configuration for MySQL -->
+	<New id="capstone" class="org.eclipse.jetty.plus.jndi.Resource">
+		<Arg>jdbc/capstone</Arg>
+		<Arg>
+			<New class="org.apache.commons.dbcp.BasicDataSource">
+				<!--  FIXME the timezone stuff is probably wrong, but it makes it work for now -->
+				<Set name="Url">jdbc:mysql://localhost:3306/capstone_exchange?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC</Set>
+				<Set name="DriverClassName">com.mysql.jdbc.Driver</Set>
+				<Set name="Username">capstone_exchange</Set>
+				<Set name="Password">password</Set>
+				<Set name="MaxActive">30</Set>
+				<Set name="MaxIdle">10</Set>
+				<Set name="MinIdle">2</Set>
+				<Set name="MaxWait">5000</Set>
+				<Set name="MinEvictableIdleTimeMillis">25000</Set>
+				<Set name="TimeBetweenEvictionRunsMillis">30000</Set>
+			</New>
+		</Arg>
+	</New>
+
+	<!-- Email configuration -->
+	<New id="mail" class="org.eclipse.jetty.plus.jndi.Resource">
+		<Arg></Arg>
+		<Arg>java:/comp/env/mail/Session</Arg>
+		<Arg>
+			<New class="org.eclipse.jetty.jndi.factories.MailSessionReference">
+				<Set name="user"></Set>
+				<Set name="password"></Set>
+				<Set name="properties">
+					<New class="java.util.Properties">
+						<Put name="mail.smtp.host">localhost</Put>
+						<Put name="mail.smtp.port">25</Put>
+					</New>
+				</Set>
+			</New>
+		</Arg>
+	</New>
+	
+	
+	<New id="rabbit" class="org.eclipse.jetty.plus.jndi.Resource">
+		<Arg />
+		<Arg>java:/comp/env/bean/pac4j</Arg>
+		<Arg>
+			<New class="edu.ndsu.eci.international_capstone_exchange.util.OAuthConfig">
+				<Set name="hostname">home.frovarp.com</Set>
+				<Set name="googleId">home.frovarp.com</Set>
+				<Set name="googleSecret">home.frovarp.com</Set>
+				<Set name="hmac">change to something random</Set>
+			</New>
+		</Arg>
+	</New>
+  
+    <New id="singleuser" class="org.eclipse.jetty.plus.jndi.Resource">
+    <Arg />
+    <Arg>java:/comp/env/bean/singleuser</Arg>
+    <Arg>
+      <New class="edu.ndsu.eci.international_capstone_exchange.util.SingleUserMode">
+        <Set name="credential">foobar</Set>
+      </New>
+    </Arg>
+  </New>
+  
+      <New id="emailconf" class="org.eclipse.jetty.plus.jndi.Resource">
+    <Arg />
+    <Arg>java:/comp/env/bean/emailconf</Arg>
+    <Arg>
+      <New class="edu.ndsu.eci.international_capstone_exchange.util.EmailConfig">
+        <Set name="fromAddress">ndsu.icpe@ndsu.edu</Set>
+      </New>
+    </Arg>
+  </New>
+</Configure>

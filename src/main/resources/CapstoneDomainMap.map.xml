@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-map xmlns="http://cayenne.apache.org/schema/3.0/modelMap"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://cayenne.apache.org/schema/3.0/modelMap http://cayenne.apache.org/schema/3.0/modelMap.xsd"
+  project-version="3.0.0.1">
+	<property name="defaultPackage" value="edu.ndsu.eci.international_capstone_exchange.persist"/>
+	<db-entity name="countries">
+		<db-attribute name="created" type="TIMESTAMP" isMandatory="true"/>
+		<db-attribute name="name" type="VARCHAR" isMandatory="true" length="50"/>
+		<db-attribute name="pk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="status" type="VARCHAR" isMandatory="true" length="20"/>
+	</db-entity>
+	<db-entity name="institutions">
+		<db-attribute name="countryPk" type="INTEGER" isMandatory="true"/>
+		<db-attribute name="created" type="TIMESTAMP" isMandatory="true"/>
+		<db-attribute name="currencyPk" type="INTEGER" isMandatory="true"/>
+		<db-attribute name="name" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="pk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="status" type="VARCHAR" isMandatory="true" length="20"/>
+		<db-attribute name="url" type="VARCHAR" length="255"/>
+	</db-entity>
+	<db-entity name="pairingCompany">
+		<db-attribute name="companyAddress" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="companyName" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="companyUrl" type="VARCHAR" length="255"/>
+		<db-attribute name="pk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="proposalPk" type="INTEGER" isMandatory="true"/>
+	</db-entity>
+	<db-entity name="pairingNotes">
+		<db-attribute name="adminOnly" type="BOOLEAN" isMandatory="true"/>
+		<db-attribute name="note" type="CLOB" isMandatory="true"/>
+		<db-attribute name="pairingPk" type="INTEGER" isMandatory="true"/>
+		<db-attribute name="pk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="tmstamp" type="TIMESTAMP" isMandatory="true"/>
+		<db-attribute name="userPk" type="INTEGER" isMandatory="true"/>
+	</db-entity>
+	<db-entity name="pairings">
+		<db-attribute name="adminUser" type="INTEGER" isMandatory="true"/>
+		<db-attribute name="name" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="pk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="tmstamp" type="TIMESTAMP" isMandatory="true"/>
+	</db-entity>
+	<db-entity name="proposalSubjects">
+		<db-attribute name="proposalPk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="subjectPk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+	</db-entity>
+	<db-entity name="proposalTypes">
+		<db-attribute name="proposalPk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="typePk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+	</db-entity>
+	<db-entity name="proposals">
+		<db-attribute name="cost" type="DOUBLE"/>
+		<db-attribute name="created" type="TIMESTAMP" isMandatory="true"/>
+		<db-attribute name="description" type="CLOB" isMandatory="true"/>
+		<db-attribute name="durationInWeeks" type="INTEGER" isMandatory="true"/>
+		<db-attribute name="institutionPk" type="INTEGER" isMandatory="true"/>
+		<db-attribute name="lastModified" type="TIMESTAMP" isMandatory="true"/>
+		<db-attribute name="name" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="pairingPk" type="INTEGER"/>
+		<db-attribute name="perStudentWeekly" type="DOUBLE" isMandatory="true"/>
+		<db-attribute name="pk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="potentialStart" type="DATE" isMandatory="true"/>
+		<db-attribute name="proposalStatus" type="VARCHAR" isMandatory="true" length="20"/>
+		<db-attribute name="submittingUser" type="INTEGER" isMandatory="true"/>
+		<db-attribute name="teamSize" type="INTEGER" isMandatory="true"/>
+	</db-entity>
+	<db-entity name="roles">
+		<db-attribute name="pk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="role" type="VARCHAR" isMandatory="true" length="20"/>
+		<db-attribute name="userPk" type="INTEGER" isMandatory="true"/>
+	</db-entity>
+	<db-entity name="subjects">
+		<db-attribute name="created" type="TIMESTAMP" isMandatory="true"/>
+		<db-attribute name="description" type="CLOB" isMandatory="true"/>
+		<db-attribute name="name" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="pk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="status" type="VARCHAR" isMandatory="true" length="20"/>
+	</db-entity>
+	<db-entity name="types">
+		<db-attribute name="created" type="TIMESTAMP" isMandatory="true"/>
+		<db-attribute name="description" type="CLOB" isMandatory="true"/>
+		<db-attribute name="name" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="pk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="status" type="VARCHAR" isMandatory="true" length="20"/>
+	</db-entity>
+	<db-entity name="users">
+		<db-attribute name="created" type="TIMESTAMP" isMandatory="true"/>
+		<db-attribute name="departmentName" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="email" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="id" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="institutionPk" type="INTEGER"/>
+		<db-attribute name="name" type="VARCHAR" length="255"/>
+		<db-attribute name="pk" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="source" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="ssoEmail" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="ssoName" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-attribute name="status" type="VARCHAR" isMandatory="true" length="20"/>
+		<db-attribute name="url" type="VARCHAR" length="255"/>
+		<db-attribute name="workPhone" type="VARCHAR" length="255"/>
+	</db-entity>
+	<obj-entity name="Country" className="edu.ndsu.eci.international_capstone_exchange.persist.Country" dbEntityName="countries">
+		<obj-attribute name="created" type="java.util.Date" db-attribute-path="created"/>
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+		<obj-attribute name="status" type="edu.ndsu.eci.international_capstone_exchange.util.Status" db-attribute-path="status"/>
+	</obj-entity>
+	<obj-entity name="Institution" className="edu.ndsu.eci.international_capstone_exchange.persist.Institution" dbEntityName="institutions">
+		<obj-attribute name="created" type="java.util.Date" db-attribute-path="created"/>
+		<obj-attribute name="currencyPk" type="java.lang.Integer" db-attribute-path="currencyPk"/>
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+		<obj-attribute name="status" type="edu.ndsu.eci.international_capstone_exchange.util.Status" db-attribute-path="status"/>
+		<obj-attribute name="url" type="java.lang.String" db-attribute-path="url"/>
+	</obj-entity>
+	<obj-entity name="Pairing" className="edu.ndsu.eci.international_capstone_exchange.persist.Pairing" dbEntityName="pairings">
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+		<obj-attribute name="tmstamp" type="java.util.Date" db-attribute-path="tmstamp"/>
+	</obj-entity>
+	<obj-entity name="PairingCompany" className="edu.ndsu.eci.international_capstone_exchange.persist.PairingCompany" dbEntityName="pairingCompany">
+		<obj-attribute name="companyAddress" type="java.lang.String" db-attribute-path="companyAddress"/>
+		<obj-attribute name="companyName" type="java.lang.String" db-attribute-path="companyName"/>
+		<obj-attribute name="companyUrl" type="java.lang.String" db-attribute-path="companyUrl"/>
+	</obj-entity>
+	<obj-entity name="PairingNotes" className="edu.ndsu.eci.international_capstone_exchange.persist.PairingNotes" dbEntityName="pairingNotes">
+		<obj-attribute name="adminOnly" type="java.lang.Boolean" db-attribute-path="adminOnly"/>
+		<obj-attribute name="note" type="java.lang.String" db-attribute-path="note"/>
+		<obj-attribute name="tmstamp" type="java.util.Date" db-attribute-path="tmstamp"/>
+	</obj-entity>
+	<obj-entity name="Proposal" className="edu.ndsu.eci.international_capstone_exchange.persist.Proposal" dbEntityName="proposals">
+		<obj-attribute name="cost" type="java.lang.Double" db-attribute-path="cost"/>
+		<obj-attribute name="created" type="java.util.Date" db-attribute-path="created"/>
+		<obj-attribute name="description" type="java.lang.String" db-attribute-path="description"/>
+		<obj-attribute name="durationInWeeks" type="java.lang.Integer" db-attribute-path="durationInWeeks"/>
+		<obj-attribute name="lastModified" type="java.util.Date" db-attribute-path="lastModified"/>
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+		<obj-attribute name="perStudentWeekly" type="java.lang.Double" db-attribute-path="perStudentWeekly"/>
+		<obj-attribute name="potentialStart" type="java.util.Date" db-attribute-path="potentialStart"/>
+		<obj-attribute name="proposalStatus" type="edu.ndsu.eci.international_capstone_exchange.util.ProposalStatus" db-attribute-path="proposalStatus"/>
+		<obj-attribute name="teamSize" type="java.lang.Integer" db-attribute-path="teamSize"/>
+	</obj-entity>
+	<obj-entity name="ProposalType" className="edu.ndsu.eci.international_capstone_exchange.persist.ProposalType" dbEntityName="types">
+		<obj-attribute name="created" type="java.util.Date" db-attribute-path="created"/>
+		<obj-attribute name="description" type="java.lang.String" db-attribute-path="description"/>
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+		<obj-attribute name="status" type="edu.ndsu.eci.international_capstone_exchange.util.Status" db-attribute-path="status"/>
+	</obj-entity>
+	<obj-entity name="Role" className="edu.ndsu.eci.international_capstone_exchange.persist.Role" dbEntityName="roles">
+		<obj-attribute name="role" type="edu.ndsu.eci.international_capstone_exchange.util.UserRole" db-attribute-path="role"/>
+	</obj-entity>
+	<obj-entity name="Subject" className="edu.ndsu.eci.international_capstone_exchange.persist.Subject" dbEntityName="subjects">
+		<obj-attribute name="created" type="java.util.Date" db-attribute-path="created"/>
+		<obj-attribute name="description" type="java.lang.String" db-attribute-path="description"/>
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+		<obj-attribute name="status" type="edu.ndsu.eci.international_capstone_exchange.util.Status" db-attribute-path="status"/>
+	</obj-entity>
+	<obj-entity name="User" className="edu.ndsu.eci.international_capstone_exchange.persist.User" dbEntityName="users">
+		<obj-attribute name="created" type="java.util.Date" db-attribute-path="created"/>
+		<obj-attribute name="departmentName" type="java.lang.String" db-attribute-path="departmentName"/>
+		<obj-attribute name="email" type="java.lang.String" db-attribute-path="email"/>
+		<obj-attribute name="id" type="java.lang.String" db-attribute-path="id"/>
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+		<obj-attribute name="source" type="java.lang.String" db-attribute-path="source"/>
+		<obj-attribute name="ssoEmail" type="java.lang.String" db-attribute-path="ssoEmail"/>
+		<obj-attribute name="ssoName" type="java.lang.String" db-attribute-path="ssoName"/>
+		<obj-attribute name="status" type="edu.ndsu.eci.international_capstone_exchange.util.Status" db-attribute-path="status"/>
+		<obj-attribute name="url" type="java.lang.String" db-attribute-path="url"/>
+		<obj-attribute name="workPhone" type="java.lang.String" db-attribute-path="workPhone"/>
+	</obj-entity>
+	<db-relationship name="institutions" source="countries" target="institutions" toMany="true">
+		<db-attribute-pair source="pk" target="countryPk"/>
+	</db-relationship>
+	<db-relationship name="country" source="institutions" target="countries" toMany="false">
+		<db-attribute-pair source="countryPk" target="pk"/>
+	</db-relationship>
+	<db-relationship name="proposals" source="institutions" target="proposals" toMany="true">
+		<db-attribute-pair source="pk" target="institutionPk"/>
+	</db-relationship>
+	<db-relationship name="users" source="institutions" target="users" toMany="true">
+		<db-attribute-pair source="pk" target="institutionPk"/>
+	</db-relationship>
+	<db-relationship name="proposal" source="pairingCompany" target="proposals" toMany="false">
+		<db-attribute-pair source="proposalPk" target="pk"/>
+	</db-relationship>
+	<db-relationship name="pairing" source="pairingNotes" target="pairings" toMany="false">
+		<db-attribute-pair source="pairingPk" target="pk"/>
+	</db-relationship>
+	<db-relationship name="user" source="pairingNotes" target="users" toMany="false">
+		<db-attribute-pair source="userPk" target="pk"/>
+	</db-relationship>
+	<db-relationship name="admin" source="pairings" target="users" toMany="false">
+		<db-attribute-pair source="adminUser" target="pk"/>
+	</db-relationship>
+	<db-relationship name="notes" source="pairings" target="pairingNotes" toMany="true">
+		<db-attribute-pair source="pk" target="pairingPk"/>
+	</db-relationship>
+	<db-relationship name="proposals" source="pairings" target="proposals" toMany="true">
+		<db-attribute-pair source="pk" target="pairingPk"/>
+	</db-relationship>
+	<db-relationship name="proposal" source="proposalSubjects" target="proposals" toMany="false">
+		<db-attribute-pair source="proposalPk" target="pk"/>
+	</db-relationship>
+	<db-relationship name="subject" source="proposalSubjects" target="subjects" toMany="false">
+		<db-attribute-pair source="subjectPk" target="pk"/>
+	</db-relationship>
+	<db-relationship name="proposal" source="proposalTypes" target="proposals" toMany="false">
+		<db-attribute-pair source="proposalPk" target="pk"/>
+	</db-relationship>
+	<db-relationship name="type" source="proposalTypes" target="types" toMany="false">
+		<db-attribute-pair source="typePk" target="pk"/>
+	</db-relationship>
+	<db-relationship name="company" source="proposals" target="pairingCompany" toMany="false">
+		<db-attribute-pair source="pk" target="proposalPk"/>
+	</db-relationship>
+	<db-relationship name="institution" source="proposals" target="institutions" toMany="false">
+		<db-attribute-pair source="institutionPk" target="pk"/>
+	</db-relationship>
+	<db-relationship name="pairing" source="proposals" target="pairings" toMany="false">
+		<db-attribute-pair source="pairingPk" target="pk"/>
+	</db-relationship>
+	<db-relationship name="subjects" source="proposals" target="proposalSubjects" toDependentPK="true" toMany="true">
+		<db-attribute-pair source="pk" target="proposalPk"/>
+	</db-relationship>
+	<db-relationship name="types" source="proposals" target="proposalTypes" toDependentPK="true" toMany="true">
+		<db-attribute-pair source="pk" target="proposalPk"/>
+	</db-relationship>
+	<db-relationship name="user" source="proposals" target="users" toMany="false">
+		<db-attribute-pair source="submittingUser" target="pk"/>
+	</db-relationship>
+	<db-relationship name="user" source="roles" target="users" toMany="false">
+		<db-attribute-pair source="userPk" target="pk"/>
+	</db-relationship>
+	<db-relationship name="proposals" source="subjects" target="proposalSubjects" toDependentPK="true" toMany="true">
+		<db-attribute-pair source="pk" target="subjectPk"/>
+	</db-relationship>
+	<db-relationship name="proposals" source="types" target="proposalTypes" toDependentPK="true" toMany="true">
+		<db-attribute-pair source="pk" target="typePk"/>
+	</db-relationship>
+	<db-relationship name="institution" source="users" target="institutions" toMany="false">
+		<db-attribute-pair source="institutionPk" target="pk"/>
+	</db-relationship>
+	<db-relationship name="pairingNotes" source="users" target="pairingNotes" toMany="true">
+		<db-attribute-pair source="pk" target="userPk"/>
+	</db-relationship>
+	<db-relationship name="pairsMade" source="users" target="pairings" toMany="true">
+		<db-attribute-pair source="pk" target="adminUser"/>
+	</db-relationship>
+	<db-relationship name="proposals" source="users" target="proposals" toMany="true">
+		<db-attribute-pair source="pk" target="submittingUser"/>
+	</db-relationship>
+	<db-relationship name="roles" source="users" target="roles" toMany="true">
+		<db-attribute-pair source="pk" target="userPk"/>
+	</db-relationship>
+	<obj-relationship name="institutions" source="Country" target="Institution" deleteRule="Deny" db-relationship-path="institutions"/>
+	<obj-relationship name="country" source="Institution" target="Country" deleteRule="Nullify" db-relationship-path="country"/>
+	<obj-relationship name="proposals" source="Institution" target="Proposal" deleteRule="Deny" db-relationship-path="proposals"/>
+	<obj-relationship name="users" source="Institution" target="User" deleteRule="Deny" db-relationship-path="users"/>
+	<obj-relationship name="admin" source="Pairing" target="User" deleteRule="Nullify" db-relationship-path="admin"/>
+	<obj-relationship name="notes" source="Pairing" target="PairingNotes" deleteRule="Deny" db-relationship-path="notes"/>
+	<obj-relationship name="proposals" source="Pairing" target="Proposal" deleteRule="Deny" db-relationship-path="proposals"/>
+	<obj-relationship name="proposal" source="PairingCompany" target="Proposal" deleteRule="Nullify" db-relationship-path="proposal"/>
+	<obj-relationship name="pairing" source="PairingNotes" target="Pairing" deleteRule="Nullify" db-relationship-path="pairing"/>
+	<obj-relationship name="user" source="PairingNotes" target="User" deleteRule="Nullify" db-relationship-path="user"/>
+	<obj-relationship name="company" source="Proposal" target="PairingCompany" deleteRule="Cascade" db-relationship-path="company"/>
+	<obj-relationship name="institution" source="Proposal" target="Institution" deleteRule="Nullify" db-relationship-path="institution"/>
+	<obj-relationship name="pairing" source="Proposal" target="Pairing" deleteRule="Nullify" db-relationship-path="pairing"/>
+	<obj-relationship name="subjects" source="Proposal" target="Subject" deleteRule="Nullify" db-relationship-path="subjects.subject"/>
+	<obj-relationship name="types" source="Proposal" target="ProposalType" deleteRule="Nullify" db-relationship-path="types.type"/>
+	<obj-relationship name="user" source="Proposal" target="User" deleteRule="Nullify" db-relationship-path="user"/>
+	<obj-relationship name="proposal" source="ProposalType" target="Proposal" deleteRule="Deny" db-relationship-path="proposals.proposal"/>
+	<obj-relationship name="user" source="Role" target="User" deleteRule="Nullify" db-relationship-path="user"/>
+	<obj-relationship name="proposals" source="Subject" target="Proposal" deleteRule="Deny" db-relationship-path="proposals.proposal"/>
+	<obj-relationship name="institution" source="User" target="Institution" deleteRule="Nullify" db-relationship-path="institution"/>
+	<obj-relationship name="pairingNotes" source="User" target="PairingNotes" deleteRule="Deny" db-relationship-path="pairingNotes"/>
+	<obj-relationship name="pairsMade" source="User" target="Pairing" deleteRule="Deny" db-relationship-path="pairsMade"/>
+	<obj-relationship name="proposals" source="User" target="Proposal" deleteRule="Deny" db-relationship-path="proposals"/>
+	<obj-relationship name="roles" source="User" target="Role" deleteRule="Deny" db-relationship-path="roles"/>
+	<query name="Countries" factory="org.apache.cayenne.map.SelectQueryBuilder" root="obj-entity" root-name="Country">
+		<qualifier><![CDATA[status = $status]]></qualifier>
+		<ordering><![CDATA[name]]></ordering>
+	</query>
+	<query name="PropTypesByStatus" factory="org.apache.cayenne.map.SelectQueryBuilder" root="obj-entity" root-name="ProposalType">
+		<qualifier><![CDATA[status = $status]]></qualifier>
+		<ordering><![CDATA[name]]></ordering>
+	</query>
+	<query name="ProposalsByStatus" factory="org.apache.cayenne.map.SelectQueryBuilder" root="obj-entity" root-name="Proposal">
+		<qualifier><![CDATA[proposalStatus = $status]]></qualifier>
+		<ordering><![CDATA[created]]></ordering>
+	</query>
+	<query name="RoleByNameQuery" factory="org.apache.cayenne.map.SelectQueryBuilder" root="obj-entity" root-name="Role">
+		<qualifier><![CDATA[role = $name]]></qualifier>
+	</query>
+	<query name="SubjectsByStatus" factory="org.apache.cayenne.map.SelectQueryBuilder" root="obj-entity" root-name="Subject">
+		<qualifier><![CDATA[status = $status]]></qualifier>
+		<ordering><![CDATA[name]]></ordering>
+	</query>
+	<query name="UserBySourceIdQuery" factory="org.apache.cayenne.map.SelectQueryBuilder" root="obj-entity" root-name="User">
+		<qualifier><![CDATA[(source = $source) and (id = $id)]]></qualifier>
+	</query>
+	<query name="UsersByRoleQuery" factory="org.apache.cayenne.map.SelectQueryBuilder" root="obj-entity" root-name="User">
+		<qualifier><![CDATA[roles.role = $role]]></qualifier>
+	</query>
+	<query name="UsersByStatus" factory="org.apache.cayenne.map.SelectQueryBuilder" root="obj-entity" root-name="User">
+		<qualifier><![CDATA[status = $status]]></qualifier>
+	</query>
+</data-map>

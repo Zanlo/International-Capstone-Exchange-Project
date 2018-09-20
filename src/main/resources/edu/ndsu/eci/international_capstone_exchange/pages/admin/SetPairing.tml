@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+ Copyright 2018 North Dakota State University
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<html
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+    xmlns:p="tapestry:parameter" t:type="adminlayout" title="Set Pairing">
+    
+    <h3>Source Proposal</h3>
+    <div id="source-proposal">
+    <t:beandisplay object="source" exclude="proposalStatus,pairing,editable,company" add="country" reorder="institution,country,subjects,types,user,name,description,potentialStart,teamSize,cost,created,durationInWeeks,perStudentWeekly,lastModified">
+      <p:description><t:outputraw value="source.description"></t:outputraw></p:description>
+      <p:country>${source.institution.country}</p:country>
+    </t:beandisplay></div>
+    
+    <h3>Options</h3>
+    <t:grid source="proposals" row="row" add="subjects,types,pair" exclude="name" reorder="score,pair,institution,country,subjects,types,user,description,potentialStart,teamSize,cost,created,durationInWeeks,perStudentWeekly,lastModified">
+      <p:descriptionCell><t:outputraw value="row.description"></t:outputraw></p:descriptionCell>
+      <p:subjectsCell><ul>
+        <t:loop source="row.subjects" value="subjectRow"><li>${subjectRow.name}</li></t:loop>
+      </ul></p:subjectsCell>
+      <p:typesCell><ul>
+        <t:loop source="row.types" value="typeRow"><li>${typeRow.name}</li></t:loop>
+      </ul></p:typesCell>
+      <p:pairCell>Pair <t:eventlink context="row.dest" event="pair">${row.name} <span class="sr-only">${row.institution}</span></t:eventlink></p:pairCell>
+    </t:grid>
+    
+    <style type="text/css">
+#source-proposal.navbar-fixed-top {
+  background-color: #fff;
+  top: 50px;
+}
+#source-proposal.navbar-fixed-top dt {
+  margin-left: 1em;
+  width: initial;
+  clear: none;
+}
+#source-proposal.navbar-fixed-top dl {
+  margin-bottom: 0;
+}
+#source-proposal.navbar-fixed-top dl:after,
+#source-proposal.navbar-fixed-top dl:before {
+  display: table;
+  content: " ";
+  clear: both;
+}
+#source-proposal.navbar-fixed-top dd {
+  float: left;
+  margin-left: 1em;
+}
+#source-proposal.navbar-fixed-top li {
+  display: inline;
+}
+#source-proposal.navbar-fixed-top li:after {
+  content: ", ";
+}
+#source-proposal.navbar-fixed-top li:last-of-type:after {
+  content: "";
+}
+#source-proposal.navbar-fixed-top ul {
+  padding: 0;
+}
+#source-proposal.navbar-fixed-top p {
+  margin: 0;
+}
+</style>
+
+<script>
+// When the user scrolls the page, execute
+window.onscroll = function() {stickyContent()};
+
+// Get the container
+var container = document.getElementById("source-proposal");
+
+// Get the offset position of the container
+var containerPosition = container.offsetTop;
+
+// Add the "sticky" class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyContent() {
+  <t:outputraw value="ifStatement"></t:outputraw>
+<!--   if (window.pageYOffset >= containerPosition) { -->
+    container.classList.add("navbar-fixed-top");
+  } else {
+    container.classList.remove("navbar-fixed-top");
+  }
+}
+</script>
+
+    
+</html>

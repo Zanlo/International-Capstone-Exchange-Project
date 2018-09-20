@@ -1,0 +1,99 @@
+<!--
+ Copyright 2018 North Dakota State University
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<html t:type="layout" title="Collaborator international-capstone-exchange"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+<!-- Contact Section -->
+<!--@Author Masingh-->
+<body>
+<div id="contact">
+  <h2>Contact</h2>
+  <p>Let's get in touch. Send us a message:</p>
+  <table class="table table-bordered">
+    <thead>
+    <tr class="success">
+      <th>Name</th>
+      <th>Phone and Email</th>
+      <th>Mailing Address</th>
+      <th>Physical Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td>
+        <p><i class="fa fa-user fa-fw"></i><strong>Dr. Dean Knudson</strong><br/>
+          Associate Professor &amp; Capstone Coordinator<br/>
+          North Dakota State University
+        </p>
+      </td>
+      <td>
+        <p><i class="fa fa-phone fa-fw"></i> Phone: +1-701-231-5612<br/>
+          <i class="fa fa-envelope fa-fw"></i> Email: <a class="text-success" href="mailto:dean.knudson@ndsu.edu">dean.knudson@ndsu.edu</a></p>
+      </td>
+      <td>
+        <p>
+          Department of Computer Science<br/>
+          NDSU Dept #2740<br/>
+          PO Box 6050<br/>
+          Fargo, ND 58108-6050<br/>
+          USA
+        </p>
+      </td>
+      <td>
+        <p>
+          1320 Albrecht Boulevard<br/>
+          Quentin Burdick Building 258<br/>
+          Fargo, ND 58102
+        </p>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<!--
+<div id="contact">
+  <h2>Contact</h2>
+  <p>Let's get in touch. Send us a message:</p>
+
+  <address>
+    <p><i class="fa fa-user fa-fw"></i><strong>Dr. Dean Knudson</strong><br/>
+      Associate Professor &amp; Capstone Coordinator<br/>
+      North Dakota State University
+    </p>
+    <p><i class="fa fa-phone fa-fw"></i> Phone: +1-701-231-5612<br/>
+    <i class="fa fa-envelope fa-fw"></i> Email: <a href="mailto:dean.knudson@ndsu.edu">dean.knudson@ndsu.edu</a></p>
+    <p>
+      <em>Mailing address:</em><br/>
+  	  Department of Computer Science<br/>
+      NDSU Dept #2740<br/>
+      PO Box 6050<br/>
+  	  Fargo, ND 58108-6050<br/>
+      USA
+    </p>
+    <p>
+      <em>Physical address:</em><br/>
+      1320 Albrecht Boulevard<br/>
+      Quentin Burdick Building 258<br/>
+      Fargo, ND 58102
+    </p> 
+  </address>
+</div>
+-->
+</body>
+</html>
+
+
