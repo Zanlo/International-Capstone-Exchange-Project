@@ -62,7 +62,7 @@
    <t:grid source="allProposals" row="row" add="country" exclude="potentialStart,teamSize,cost,created,durationInWeeks,perStudentWeekly,lastModified,description,company" reorder="institution,country,subjects,types,user">
     <!--<p:descriptionCell><t:outputraw value="row.description"></t:outputraw></p:descriptionCell>-->
     <p:countryCell>${row.institution.country}</p:countryCell>
-    <p:subjectsCell><span t:type="loop" t:source="row.subjects" t:value="subject">${subject.name}</span></p:subjectsCell>
+    <!--<p:subjectsCell><span t:type="loop" t:source="row.subjects" t:value="subject">${subject.name}</span></p:subjectsCell>-->
     <p:pairingCell>
      <t:if test="row.pairing">
       ${row.paired.institution} - ${row.paired.name}

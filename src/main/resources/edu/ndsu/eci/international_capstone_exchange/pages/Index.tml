@@ -65,24 +65,17 @@
                    class="list-group-item text-center list-group-item-success">
                     <div>Privacy Policy</div>
                 </a>
+                <!--
                 <a href="/international-capstone-exchange/Login"
                    class="list-group-item text-center list-group-item-success">
                     <div>Login</div>
                 </a>
+                -->
             </div>
 
 
         </div>
     </div>
-    <!--
-
-<div id="Dept">
-
-<p>
-
-The <a href="https://icp.cs.ndsu.nodak.edu/">International Capstone Project Exchange</a> is a network of universities and companies that collaborate to give students real-world international experience without requiring travel.</p>
-</div>
--->
 </div>
 </body>
 </html>

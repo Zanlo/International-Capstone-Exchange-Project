@@ -29,28 +29,10 @@
 	<!--@Author masingh -->
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    -->
 	<!-- Bootstrap CSS CDN -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
 	<!-- Scrollbar Custom CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"/>
-
-	<!--
-            <style>
-                body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-                body, html {
-                height: 100%;
-                line-height: 1.8;
-                }
-
-                .w3-bar .w3-button {
-                padding: 16px;
-                }
-            </style>
-            -->
 </head>
 
 <body>
@@ -97,38 +79,9 @@
 			   <li>
 				   <t:pagelink page="Logout">Logout</t:pagelink>
 			   </li>
-			   <!--
-			   <li>
-				   <t:pagelink page="admin/proposals">Proposals</t:pagelink>
-			   </li>
-			   <li>
-				   <t:pagelink page="admin/users">Users</t:pagelink>
-			   </li>
-			   <li>
-				   <t:pagelink page="admin/autocomp">Autocomplete Test</t:pagelink>
-			   </li>
-			   -->
 		   </ul>
 	   </nav>
 	   <div id="content">
-		   <!--
-		   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-			   <div class="container-fluid">
-				   <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					   <i class="fas fa-align-justify"></i>
-				   </button>
-				   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-					   <ul class="nav navbar-nav ml-auto">
-						   <t:loop source="pageNames" value="pageName">
-							   <t:any element="li" class="prop:classForPageName">
-								  <t:pagelink page="prop:pageName">${pageName}</t:pagelink>
-							   </t:any>
-						   </t:loop>
-					   </ul>
-				   </div>
-			   </div>
-		   </nav>
-		   -->
 		   <h1>${title}</h1>
 		   <t:body />
 

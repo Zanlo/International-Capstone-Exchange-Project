@@ -30,18 +30,6 @@
     </ul>
 </div>
 <t:federated.federatedSignInOptionsPanel/>
-<!--
-<h2>Sign In Options</h2>
-  <p>The login options will be expanded in the future to include Facebook, Twitter, and eduGAIN.</p>  
-
-<p>For now, you need to register with a Google account.</p>
-<ul>
-  <li>Click on the Google button.</li>
-  <li>Choose an existing account if you have already set one up or "Use another account" if it is your first time logging in.</li>
-  <li>If you choose "Use another account" you will be asked to enter your Google email address or phone number.  If you do not have a Google account, it will ask you if you want to create one.  Click on "Create account" to create a new Google account.</li>
-           </ul>
-<t:federated.federatedSignInOptionsPanel/>
--->
 
 </body>
 </html>

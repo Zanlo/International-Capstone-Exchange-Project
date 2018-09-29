@@ -88,50 +88,6 @@
             </t:grid>
         </div>
     </div>
-  <!--
-     <h2>Account Info</h2>
-      <t:Beandisplay object="user" exclude="proposals,roles,credentialsExpired,accountLocked,id,status,pairingNotes,federatedId,pairsMade"></t:Beandisplay>
-      <div><t:pagelink page="account/updateaccount">Update Account</t:pagelink></div>
-
- <h2>Pairings</h2>
- <p>Follow link for more details.</p>
- <t:grid source="pairings" exclude="notes,proposals,admin" row="pairRow" add="A,B" reorder="name,a,b"> 
-   <p:aCell>${pairRow.proposals.get(0).name}</p:aCell>
-   <p:bCell>${pairRow.proposals.get(1).name}</p:bCell>
-   <p:nameCell><t:pagelink page="account/pairview" context="pairRow">${pairRow.name}</t:pagelink></p:nameCell>
- </t:grid>
- 
- <h2>Proposals</h2>
-  <t:grid source="proposals" include="created,name,potentialStart,subjects,types,description" row="proposalRow" add="edit,delete">
-  	<p:descriptionCell><t:outputraw value="proposalRow.description"></t:outputraw></p:descriptionCell>
-  	
-    <p:editCell>
-    	<t:if test="proposalRow.editable">
-    		<t:pagelink page="account/proposalsubmission" context="proposalRow">Edit ${proposalRow.name}</t:pagelink>
-    	</t:if>
-    </p:editCell>
-    <p:deleteCell>
-      <t:if test="proposalRow.deletable">
-        <t:eventlink event="delete" context="proposalRow">Delete ${proposalRow.name}</t:eventlink>
-      </t:if>
-    </p:deleteCell>
-  </t:grid>
-  <div><t:pagelink page="account/proposalsubmission">Create Proposal</t:pagelink></div>
-
- 
-  <h2>Proposal Types</h2>
-  <div>Description of the types of proposals in the system..</div>
-  <t:grid source="proposalTypes" row="propTypeRow" include="name,description">
-    <p:descriptionCell><t:outputraw value="propTypeRow.description"></t:outputraw></p:descriptionCell>
-  </t:grid>
-
- 
-  <h2>Subjects</h2>
-  <div>Currently available subjects in the system. Have a good idea for a new subject? Reach out to us on the <t:pagelink page="contact">contact page</t:pagelink>.</div>
-  <t:grid source="subjects" row="subjectRow" include="name,description">
-  	<p:descriptionCell><t:outputraw value="subjectRow.description"></t:outputraw></p:descriptionCell>
-  </t:grid>
-  -->
 </div>
 
 </body>

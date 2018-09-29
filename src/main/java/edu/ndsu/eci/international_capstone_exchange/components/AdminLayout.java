@@ -39,7 +39,6 @@ public class AdminLayout extends Layout{
 
 
     public void setupRender() {
-        //this.javaScriptSupport.importJavaScriptLibrary("https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js");
 
         user = userInfo.getUser();
     }

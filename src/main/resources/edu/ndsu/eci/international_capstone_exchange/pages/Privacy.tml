@@ -33,20 +33,4 @@
     <p>If someone wants to no longer be a member, their personal data will be anonymized.</p>
     <p>If you have any questions about this policy, please <t:pagelink class="text-success" page="contact">contact us</t:pagelink>.</p>
 </div>
-<!--
-        <h1>Privacy Policy</h1>
-        <p>This site uses cookies to maintain session state. Access to the site is logged. This logging includes IP, time, URL, and user agent. As this site uses
-        federated login, username information from third parties is also stored when a user logs in. There are no passwords stored for the system.</p>
-        <p>The core of the site is in collecting capstone exchange proposal information. That information is used as follows:</p>
-        <ul>
-          <li>Country, Institution, and Department as well as Sponsoring Company Name and Country information will be made public so people can see who is involved.</li>
-          <li>Data associated with a project request, name, phone number and email address will be shared with the paired university so they know how to contact each other and what the paired university requested.</li>
-          <li>Company name and country may be made public and other associated company information will be shared between paired universities.</li>
-          <li>System messages and updates will be sent to your email address.</li>
-          <li>All other data will be used to administer the system by the administrators.</li>
-        </ul>
-
-        <p>If someone wants to no longer be a member, their personal data will be anonymized.</p>
-        <p>If you have any questions about this policy, please <t:pagelink page="contact">contact us</t:pagelink>.</p>
-        -->
 </html>
